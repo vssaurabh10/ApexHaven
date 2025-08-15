@@ -1,0 +1,109 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm border-bottom"
+>
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="/listings">
+      <i
+        class="fa-regular fa-compass me-2"
+        style="color: #fe424d; font-size: 1.4rem"
+      ></i>
+      <span class="fw-bold">ApexHaven</span>
+    </a>
+
+    <!-- Hamburger toggle for mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar content -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <!-- Left Links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/listings">Explore</a>
+        </li>
+      </ul>
+
+      <!-- Center search (desktop only) -->
+      <form class="d-none d-lg-flex mx-auto align-items-center" role="search">
+        <input
+          class="form-control rounded-pill me-2 px-4 py-1"
+          type="search"
+          placeholder="Search destinations"
+          style="height: 38px"
+        />
+        <button
+          class="btn btn-danger rounded-pill px-4 d-flex align-items-center justify-content-center"
+          type="submit"
+          style="height: 38px; min-width: 120px"
+        >
+          <i class="fa-solid fa-magnifying-glass me-2"></i>
+          <span>Search</span>
+        </button>
+      </form>
+
+      <!-- Right Links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        </li>
+        <% if (!currUser) { %>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="/signup">Sign up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="/login">Log in</a>
+        </li>
+        <% } %> <% if (currUser) { %>
+        <li class="nav-item">
+          <a
+            class="nav-link text-danger fw-bold d-flex align-items-center"
+            href="/logout"
+          >
+            <i class="fa-solid fa-right-from-bracket me-1"></i>Log out
+          </a>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* Hover effect for nav links */
+  .navbar-nav .nav-link:hover {
+    color: #fe424d !important;
+    transition: 0.2s;
+  }
+
+  /* Search input shadow */
+  .navbar .form-control {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar .btn-danger {
+    background-color: #fe424d;
+    border: none;
+  }
+
+  .navbar .btn-danger:hover {
+    background-color: #d63a40;
+  }
+
+  /* Adjust mobile padding */
+  @media (max-width: 991px) {
+    .navbar-nav .nav-link {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+</style>

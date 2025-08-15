@@ -1,0 +1,72 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-12 col-md-6 col-lg-5">
+      <!-- Card for form -->
+      <div class="card shadow-sm p-4 rounded-4">
+        <h4 class="text-center mb-4 fw-bold">Login to ApexHaven</h4>
+
+        <form action="/login" method="POST" novalidate class="needs-validation">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input
+              name="username"
+              id="username"
+              type="text"
+              class="form-control rounded-pill"
+              placeholder="Enter your username"
+              required
+            />
+            <div class="invalid-feedback">Please enter your username</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              name="password"
+              id="password"
+              type="password"
+              class="form-control rounded-pill"
+              placeholder="Enter your password"
+              required
+            />
+            <div class="invalid-feedback">Please enter your password</div>
+          </div>
+
+          <div class="d-grid">
+            <button class="btn btn-success btn-lg rounded-pill" type="submit">
+              Login
+            </button>
+          </div>
+        </form>
+
+        <p class="text-center mt-3 mb-0">
+          Don't have an account?
+          <a href="/signup" class="text-success fw-bold">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Center the card on the page */
+  body {
+    background-color: #f8f9fa;
+  }
+
+  .card {
+    border: none;
+  }
+
+  /* Input focus shadow */
+  .form-control:focus {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Button hover effect */
+  .btn-success:hover {
+    background-color: #28a745cc;
+  }
+</style>
