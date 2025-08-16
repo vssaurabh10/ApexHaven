@@ -5,6 +5,11 @@ Users can explore destinations, add their own listings, leave reviews, and manag
 
 ---
 
+## Demo
+🚀 You can view the live demo of the project here: [Click me](https://apexhaven-airbnb-cd0g.onrender.com/)
+
+---
+
 ## ✨ Features
 
 - 👤 **User Accounts** – Sign up & Login with authentication  
@@ -139,5 +144,5 @@ MAJORPROJECT
 ---
 
 ## 📜 License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the LICENCE file for details.
 
