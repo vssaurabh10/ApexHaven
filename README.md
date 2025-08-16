@@ -62,6 +62,9 @@ SESSION_SECRET=your_session_secret
 ```bash
 npm start
 ```
+
+---
+
 ## 📂 Project Structure 
 ```bash
 MAJORPROJECT
