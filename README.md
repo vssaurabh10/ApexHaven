@@ -34,13 +34,7 @@ Users can explore destinations, add their own listings, leave reviews, and manag
 - Cloudinary (Image Uploads)  
 - Multer (File Handling)  
 - Joi (Validation)  
-- Method-Override (RESTful routes support)  
-
----
-
-## 📸 Screenshots  
-
-*(Add some screenshots here — laptop + mobile views)*  
+- Method-Override (RESTful routes support)   
 
 ---
 
@@ -132,10 +126,14 @@ MAJORPROJECT
 └── error.ejs
 ```
 
+---
+
 ## 📌 Future Improvements
 - Wishlist / Favorite listings
 - Booking system integration
 - Advanced filters (price, amenities, location)
+
+---
 
 ## 📜 License
 This project is licensed under the MIT License.
