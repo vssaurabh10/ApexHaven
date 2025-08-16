@@ -50,3 +50,30 @@ Users can explore destinations, add their own listings, leave reviews, and manag
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+### 3️⃣ Add environment variables
+```bash
+ATLASDB_URL=your_mongodb_connection_string
+MAP_TOKEN=your_mapbox_token
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_KEY=your_api_key
+CLOUDINARY_SECRET=your_api_secret
+SESSION_SECRET=your_session_secret
+```
+### 4️⃣ Run the server
+```bash
+npm start
+```
+
+## 📌 Future Improvements
+- Wishlist / Favorite listings
+- Booking system integration
+- Advanced filters (price, amenities, location)
+
+## 📜 License
+This project is licensed under the MIT License.
+
