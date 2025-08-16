@@ -1,4 +1,4 @@
-# 🌍 ApexHaven (Airbnb Clone) (EJS + Node.js)
+# 🌍 ApexHaven (Airbnb) (EJS + Node.js)
 
 An **Airbnb-style travel listings web application** built with **Node.js, Express, MongoDB, and EJS templates**.  
 Users can explore destinations, add their own listings, leave reviews, and manage accounts – all in a **fully responsive interface**.  
