@@ -68,6 +68,69 @@ SESSION_SECRET=your_session_secret
 ```bash
 npm start
 ```
+## 📂 Project Structure 
+```bash
+MAJORPROJECT
+│── app.js
+│── middleware.js
+│── package.json
+│── package-lock.json
+│── schema.js
+│── README.md
+│
+├── controllers
+│ ├── listings.js
+│ ├── reviews.js
+│ └── users.js
+│
+├── init
+│ ├── data.js
+│ └── index.js
+│
+├── models
+│ ├── listing.js
+│ ├── review.js
+│ └── user.js
+│
+├── public
+│ ├── css
+│ │ ├── rating.css
+│ │ └── style.css
+│ └── js
+│   ├── map.js
+│   └── script.js
+│
+├── routes
+│ ├── listing.js
+│ ├── review.js
+│ └── user.js
+│
+├── utils
+│ ├── ExpressError.js
+│ └── wrapAsync.js
+│
+└── views
+├── includes
+│ ├── flash.ejs
+│ ├── footer.ejs
+│ └── navbar.ejs
+│
+├── layouts
+│ └── boilerplate.ejs
+│
+├── listings
+│ ├── edit.ejs
+│ ├── index.ejs
+│ ├── new.ejs
+│ └── show.ejs
+│
+├── users
+│ ├── login.ejs
+│ └── signup.ejs
+│
+├── cloudConfig.js
+└── error.ejs
+```
 
 ## 📌 Future Improvements
 - Wishlist / Favorite listings
